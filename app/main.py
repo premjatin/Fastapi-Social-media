@@ -3,7 +3,7 @@ from app import models
 from app.routers import post,user,auth,vote
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine
-models.Base.metadata.create_all(bind=engine)
+#models.Base.metadata.create_all(bind=engine)
 
 app=FastAPI()
 app.add_middleware(
