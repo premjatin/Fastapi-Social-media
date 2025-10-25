@@ -1,6 +1,6 @@
 from app import utils
-from .. import models,schemas
-from ..database import get_db
+from app import models,schemas
+from app.database import get_db
 from fastapi import status , HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
 

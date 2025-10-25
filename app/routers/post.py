@@ -3,9 +3,9 @@ from typing import List, Optional
 from sqlalchemy import func
 
 from app import oauth2
-from .. import models,schemas
-from ..database import get_db
-from fastapi import FastAPI, Response, status , HTTPException, Depends, APIRouter
+from app import models,schemas
+from app.database import get_db
+from fastapi import Response, status , HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
 
 router=APIRouter( prefix= "/posts",tags=['Posts'])
